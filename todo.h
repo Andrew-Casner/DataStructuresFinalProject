@@ -16,6 +16,8 @@ class Todo{
 	public:
 		Todo();
 		~Todo();
+		printList();
+		readFile(std::string);
 	protected:
 	private:
 };
