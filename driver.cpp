@@ -4,7 +4,7 @@
  * Final assginment driver
  */
 
-
+#include <todo.cpp>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -14,10 +14,8 @@ int main(int argc, char *argv[]) {
 	//Main code loop
 		std::string input;
 		//run startup 
-		
-		//Clear cdm
 		std::cout << "Loading your TODO List..." << std::endl;
-		
+		Todo list = Todo();
 		//accept input
 		while(!quit){
 			std::cout << "~>:";
