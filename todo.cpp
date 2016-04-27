@@ -73,12 +73,28 @@ void Todo::enque(){
 	}
 }
 
-void Todo::findItem(){
-	
+void Todo::findItem(string item){
+	bool found = false;
+	int index;
+	for(int i = 0; i < 100; i++){
+		if(que[i] == item){
+			found = true;
+			index = i+1;
+		}
+	}
+	if(found){
+		cout <<  "~>:Found!" << endl;
+		cout << index << ": " << item << endl;
+	}
+	else{
+		cout << "~>:Could not find " << item << endl;
+	}
 }
 
 void Todo::clear(){
-	
+	for(int i = 0; i < 100; i++){
+		que[i] = "";
+	}
 }
 
 void Todo::help(){

@@ -46,6 +46,13 @@ int main(int argc, char *argv[]) {
 			else if(input == "done"){
 				list.pop();
 			}
+			else if(input == "find"){
+				std::string item;
+				std::cout << "~>:Find: ";
+				std::cin >> item;
+				std::cin.ignore();
+				list.findItem(item);
+			}
 			else{
 				std::cout << "Command not found" << std::endl;
 				std::cout << "Type 'help' for help on commands" << std::endl;

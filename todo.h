@@ -23,7 +23,7 @@ class Todo{
 		void pop();
 		void push();
 		void enque();
-		void findItem();
+		void findItem(std::string item);
 		void clear();
 		void help();
 	protected:
