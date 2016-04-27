@@ -17,7 +17,7 @@ void Todo::printList(){
 	if(que[0] != ""){
 		for(int i = 0; i < 100; i++){
 			if(que[i] != ""){
-				cout << i << ": " << que[i] << endl;
+				cout << i+1 << ": " << que[i] << endl;
 			}
 		}
 	}
@@ -47,11 +47,24 @@ void Todo::pop(){
 }
 
 void Todo::push(){
-	
+	string holder = que[0];
+	string holder2;
+	que[0] = temp;
+	temp = "";
+	for(int i = 1; i < 100; i++){
+		holder2 = que[i];
+		que[i] = holder;
+		holder = holder2;
+	}
 }
 
 void Todo::enque(){
-	
+	for(int i = 0; i < 100; i++){
+		if(que[i]==""){
+			que[i] = temp;
+			temp = "";
+		}
+	}
 }
 
 void Todo::findItem(){

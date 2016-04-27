@@ -37,6 +37,9 @@ int main(int argc, char *argv[]) {
 				std::cin.ignore();
 				list.setPriority(answer);
 			}
+			else if(input == "print"){
+				list.printList();
+			}
 			else{
 				std::cout << "Command not found" << std::endl;
 				std::cout << "Type 'help' for help on commands" << std::endl;
