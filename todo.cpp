@@ -46,9 +46,6 @@ void Todo::pop(){
 	cout << "->:Compleated " << que[0] << endl;
 	for(int i = 1; i < 100; i++){
 		que[i-1] = que[i];
-		if(i=100){
-			que[i] = "";
-		}
 	}
 }
 
@@ -98,5 +95,15 @@ void Todo::clear(){
 }
 
 void Todo::help(){
-	
+	cout << "=====================Commands=====================" << endl;
+	cout << "" << endl;
+	cout << "" << endl;
+	cout << "add		-Adds a new todo item" <<endl;
+	cout << "todo		-Shows all items in the todo list" << endl;
+	cout << "next		-Shows the next item needed todo" << endl;
+	cout << "done		-You have compleated the next item" << endl;
+	cout << "find		-Finds if you have that item in your todo list" << endl;
+	cout << "" << endl;
+	cout << "" << endl;
+
 }

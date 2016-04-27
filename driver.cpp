@@ -22,15 +22,13 @@ int main(int argc, char *argv[]) {
 			std::cin >> input;
 			std::cin.ignore();	//Get rid of extra newline left in stream after cin
 			if(input == "help") {	//choose what to do
-				std::cout << "help here" << std::endl;
-				std::cout << "list commands here" << std::endl;
+				list.help();
 			}
 			else if(input == "add"){
 				std::string item;
 				std::string answer;
 				std::cout << "~>:What do you have to do?: ";
-				std::cin >> item;
-				std::cin.ignore();
+				std::getline(std::cin, item);
 				list.addItem(item);
 				std::cout << "~>:Is this important? (y/n): ";
 				std::cin >> answer;
