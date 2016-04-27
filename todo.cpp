@@ -21,7 +21,38 @@ Todo::printList(){
 		cout << "Your List is empty" << endl;
 	}
 }
+Todo::addItem(){
+	
+}
 
-Todo::readFile(string filename){
-	//read file in 
+Todo::setPriority(){
+	
+}
+
+Todo::printNext(){
+	
+}
+
+Todo::pop(){
+	
+}
+
+Todo::push(){
+	
+}
+
+Todo::enque(){
+	
+}
+
+Todo::findItem(){
+	
+}
+
+Todo::clear(){
+	
+}
+
+Todo::help(){
+	
 }

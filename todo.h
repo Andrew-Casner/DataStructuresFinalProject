@@ -17,9 +17,18 @@ class Todo{
 		Todo();
 		~Todo();
 		printList();
-		readFile(std::string);
+		addItem();
+		setPriority();
+		printNext();
+		pop();
+		push();
+		enque();
+		findItem();
+		clear();
+		help();
 	protected:
 	private:
+	std::string que[100];
 };
 
 #endif
