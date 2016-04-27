@@ -14,7 +14,7 @@ Commands
 `done` -You have compleated the next item  
 `find` -Finds if you have that item in your todo list  
 ## Contributing
-1. Fork it!
+1. Fork repo
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
