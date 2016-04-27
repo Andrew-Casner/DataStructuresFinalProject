@@ -28,17 +28,23 @@ int main(int argc, char *argv[]) {
 			else if(input == "add"){
 				std::string item;
 				std::string answer;
-				std::cout << "~>What do you have to do?: ";
+				std::cout << "~>:What do you have to do?: ";
 				std::cin >> item;
 				std::cin.ignore();
 				list.addItem(item);
-				std::cout << "~>Is this important? (y/n): ";
+				std::cout << "~>:Is this important? (y/n): ";
 				std::cin >> answer;
 				std::cin.ignore();
 				list.setPriority(answer);
 			}
-			else if(input == "print"){
+			else if(input == "todo"){
 				list.printList();
+			}
+			else if(input == "next"){
+				list.printNext();
+			}
+			else if(input == "done"){
+				list.pop();
 			}
 			else{
 				std::cout << "Command not found" << std::endl;

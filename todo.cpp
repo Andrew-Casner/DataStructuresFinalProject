@@ -39,11 +39,17 @@ void Todo::setPriority(string priority){
 }
 
 void Todo::printNext(){
-	cout << "~> Next Item TODO: " << que[0] << endl;
+	cout << "~>:Next Item TODO: " << que[0] << endl;
 }
 
 void Todo::pop(){
-	
+	cout << "->:Compleated " << que[0] << endl;
+	for(int i = 1; i < 100; i++){
+		que[i-1] = que[i];
+		if(i=100){
+			que[i] = "";
+		}
+	}
 }
 
 void Todo::push(){
