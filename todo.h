@@ -16,19 +16,20 @@ class Todo{
 	public:
 		Todo();
 		~Todo();
-		printList();
-		addItem();
-		setPriority();
-		printNext();
-		pop();
-		push();
-		enque();
-		findItem();
-		clear();
-		help();
+		void printList();
+		void addItem(std::string item);
+		void setPriority(std::string priority);
+		void printNext();
+		void pop();
+		void push();
+		void enque();
+		void findItem();
+		void clear();
+		void help();
 	protected:
 	private:
-	std::string que[100];
+		std::string que[100];
+		std::string temp;
 };
 
 #endif

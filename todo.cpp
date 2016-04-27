@@ -12,47 +12,56 @@ Todo::~Todo(){
 	
 }
 
-Todo::printList(){
+void Todo::printList(){
 	//print list
-	if(//list is full){
-		
+	if(que[0] != ""){
+		for(int i = 0; i < 100; i++){
+			if(que[i] != ""){
+				cout << i << ": " << que[i] << endl;
+			}
+		}
 	}
 	else{
 		cout << "Your List is empty" << endl;
 	}
 }
-Todo::addItem(){
+void Todo::addItem(string item){
+	temp = item;
+}
+
+void Todo::setPriority(string priority){
+	if(priority == "y"){
+		push();
+	}
+	else{
+		enque();
+	}
+}
+
+void Todo::printNext(){
 	
 }
 
-Todo::setPriority(){
+void Todo::pop(){
 	
 }
 
-Todo::printNext(){
+void Todo::push(){
 	
 }
 
-Todo::pop(){
+void Todo::enque(){
 	
 }
 
-Todo::push(){
+void Todo::findItem(){
 	
 }
 
-Todo::enque(){
+void Todo::clear(){
 	
 }
 
-Todo::findItem(){
-	
-}
-
-Todo::clear(){
-	
-}
-
-Todo::help(){
+void Todo::help(){
 	
 }

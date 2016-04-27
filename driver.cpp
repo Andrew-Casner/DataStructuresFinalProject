@@ -25,6 +25,18 @@ int main(int argc, char *argv[]) {
 				std::cout << "help here" << std::endl;
 				std::cout << "list commands here" << std::endl;
 			}
+			else if(input == "add"){
+				std::string item;
+				std::string answer;
+				std::cout << "~>What do you have to do?: ";
+				std::cin >> item;
+				std::cin.ignore();
+				list.addItem(item);
+				std::cout << "~>Is this important? (y/n): ";
+				std::cin >> answer;
+				std::cin.ignore();
+				list.setPriority(answer);
+			}
 			else{
 				std::cout << "Command not found" << std::endl;
 				std::cout << "Type 'help' for help on commands" << std::endl;
