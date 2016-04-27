@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Data Structures Final Project}
+#Data Structures Final Project
 This Project is fr my Data Structures Final Project. It is a Todo list which is a hybrid of a stack and a que. Depending weather the item is of high priority it will push it to the stack, if it is a low priority it will enque it at the back. Once taskes are compleated you can remove them from the que.
 ## Installation
 Fork branch and run `./a.out` in cmd
