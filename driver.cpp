@@ -9,7 +9,7 @@
 #include <iostream>
 #include <string>
 
-int main(int argc, char *argv[]) {
+int main() {
 	bool quit = false;
 	//Main code loop
 		std::string input;
@@ -27,9 +27,12 @@ int main(int argc, char *argv[]) {
 			else if(input == "add"){
 				std::string item;
 				std::string answer;
+				std::string date;
 				std::cout << "~>:What do you have to do?: ";
 				std::getline(std::cin, item);
-				list.addItem(item);
+				std::cout << "~>:When is this due? (dd/mm/yyyy format or n if no due date): ";
+				std::getline(std::cin, date);
+				list.addItem(item, date);
 				std::cout << "~>:Is this important? (y/n): ";
 				std::cin >> answer;
 				std::cin.ignore();
@@ -50,6 +53,11 @@ int main(int argc, char *argv[]) {
 				std::cin >> item;
 				std::cin.ignore();
 				list.findItem(item);
+			} else if (input == "sort") {
+				list.sortByDate();
+			} else if (input == "quit") {
+				quit = true;
+				std::cout << "Goodbye!" << std::endl;
 			}
 			else{
 				std::cout << "Command not found" << std::endl;
