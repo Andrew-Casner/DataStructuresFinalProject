@@ -8,12 +8,13 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include<sstream>
 
 int main(int argc, char *argv[]) {
 	bool quit = false;
 	//Main code loop
 		std::string input;
-		//run startup 
+		//run startup
 		std::cout << "Loading your TODO List..." << std::endl;
 		Todo list = Todo();
 		//accept input
@@ -44,11 +45,15 @@ int main(int argc, char *argv[]) {
 			else if(input == "done"){
 				list.pop();
 			}
+			//made fix to find input. You can now search
+			// things with more than one word.
+			//Sean Link
 			else if(input == "find"){
 				std::string item;
 				std::cout << "~>:Find: ";
-				std::cin >> item;
-				std::cin.ignore();
+				std::string ws;
+
+				getline(std::cin,item);
 				list.findItem(item);
 			}
 			else{
