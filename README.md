@@ -27,6 +27,6 @@ Started by Andrew Casner in April of 2016
 None as of 4/27
 ## Credits
 Created by [Andrew Casner](https://github.com/Andrew-Casner "GitHub Account")  
-Contributers:
+Contributers: [Kian Tanner](https://github.com/KianTanner "GitHub Account")
 ## License
 MIT License
