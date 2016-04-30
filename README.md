@@ -3,6 +3,7 @@
 This Project is for my Data Structures Final Project. It is a Todo list which is a hybrid of a stack and a que. Depending weather the item is of high priority it will push it to the stack, if it is a low priority it will enque it at the back. Once taskes are compleated you can remove them from the que.
 ## Installation
 Fork branch  
+Use 'git clone' + url of your forked branch (not https://github.com/Andrew-Casner/DataStructuresFinalProject)  
 In terminal run `g++ -std=c++11 driver.cpp` then `./a.out`  
 Built to run on linuix  
 No external dependancies
